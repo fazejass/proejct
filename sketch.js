@@ -14,7 +14,7 @@ var rabbitGroup;
 
 var gameState = "fight"
 
-var lose, winning, explosionSound;
+
 
 function preload(){
   
@@ -134,7 +134,7 @@ else if(keyWentUp("space")){
 
 if(bullets==0){
   gameState = "bullet"
-  lose.play();
+  
 }
 
 if(rabbitGroup.isTouching(bulletGroup)){
@@ -154,7 +154,7 @@ if(rabbitGroup.isTouching(bulletGroup)){
   
 if(rabbitGroup.isTouching(player)){
 
-  lose.play();
+  
 
   for(var i=0;i<rabbitGroup.length;i++){     
        
